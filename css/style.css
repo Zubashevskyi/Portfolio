@@ -1,5 +1,7 @@
 /* base styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *,
 *::before,
 *::after {
@@ -11,6 +13,10 @@ a {
     color: inherit;
 }
 
+body {
+    font-family: Montserrat;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -19,27 +25,71 @@ a {
 
 /* Start Our Team */
 
+.title {
+    font-size: 23px;
+    line-height: 157%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
 .our-team {}
 
 .container {}
 
 .our-team__title {}
 
-.our-team__galery {}
+.our-team__galery {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 
-.our-team__card {}
+
+.our-team__card {
+    flex: 0 1 25%;
+}
 
 .card__image {}
 
-.card__title {}
+.card__title {
+    margin: 20px 0 6px 0;
+}
 
-.card__subtitle {}
+.card__subtitle {
+    font-size: 14px;
+    line-height: 143%;
+    color: #333333;
+    margin: 0 0 18px 0;
+}
 
-.social__icons {}
+.social__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
 
 .social__link {}
 
 .social__icon {}
 
+/* Media */
+
+@media (max-width:992px) {
+    .our-team__card {
+        flex: 0 1 46%;
+    }
+
+    .our-team__galery {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 
 /* End Our Team */
