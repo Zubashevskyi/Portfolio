@@ -1,0 +1,45 @@
+/* base styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Start Our Team */
+
+.our-team {}
+
+.container {}
+
+.our-team__title {}
+
+.our-team__galery {}
+
+.our-team__card {}
+
+.card__image {}
+
+.card__title {}
+
+.card__subtitle {}
+
+.social__icons {}
+
+.social__link {}
+
+.social__icon {}
+
+
+/* End Our Team */
